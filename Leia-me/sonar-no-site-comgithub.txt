@@ -5,7 +5,7 @@ sonarcloud.io
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\entrar em totorial gerar token \\\\\\\\PROJETO JAVA ESCOLHER MAVEN\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-\\\\\\\\\\cmd coloque o token gerado\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\ Abrir cmd no local onde o projeto esta linkado com seu github coloque o token gerado\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 \\\\OBSERVAÇÃO NO WINDOWS ELE NÃO ACEITA NESSE FORMATO\\\\\\\\\\\\\\\\\\\\\\\\\\\\
