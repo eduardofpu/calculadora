@@ -1,0 +1,46 @@
+site:
+sonarcloud.io
+
+\\\\\logar com o git\\\\\\\\\\\\\\\\\\\\\\\
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\entrar em totorial gerar token \\\\\\\\PROJETO JAVA ESCOLHER MAVEN\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\\\\\\\\\\cmd coloque o token gerado\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+\\\\OBSERVAÇÃO NO WINDOWS ELE NÃO ACEITA NESSE FORMATO\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+mvn sonar:sonar  \
+  -Dsonar.organization=eduardofpu-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=d8e5f0f6d08b0496abf2492caaec4d42adaa9ef5
+
+\\\\\\\\\\\\\\\\E PRECISO TIRAR AS BARRAS E COLOCAR NUMA LINHA COM ESPAÇO \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+mvn sonar:sonar -Dsonar.organization=eduardofpu-github  -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=59636465905e135c275cbe2c2ef9cdf6dea2efd8
+
+
+mvn sonar:sonar -Dsonar.organization=eduardofpu-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=d8e5f0f6d08b0496abf2492caaec4d42adaa9ef5
+
+
+dentro do site https://sonarcloud.io
+
+digite
+
+clique em MyFavorites
+
+
+
+out https://sonarcloud.io/projects/favorite
+
+
+
+\\\\Outra maneira acessar\\\\\
+
+\\\\\\\\no cmd se der tudo certo  voce vera as linhas abaixo\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+https://sonarcloud.io/api/ce/task?id=AV87ZJflfwWpOfyf_pb4
+
+\\\acessar o projeto no site sonarcloud.io\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+https://sonarcloud.io/dashboard/index/com.algaworks:patrimonio-api

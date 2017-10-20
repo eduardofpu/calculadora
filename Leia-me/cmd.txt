@@ -1,0 +1,90 @@
+                                                      SONAR
+site:
+sonarcloud.io
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\\\\\https://github.com/matheuspiment/projeto-exemplo/blob/master/pom.xml\\\\\\\\\
+
+mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+conta com o github
+https://sonarcloud.io/projects
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+mvn sonar:sonar
+
+tradicional
+https://www.sonarqube.org/downloads/
+configurar banco de dados
+subir o servidor
+acessar a porta 9000
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+docker
+https://hub.docker.com/_/sonarqube/
+subir com: docker run -d --name sonarqube -p 9000-9000 sonarqube
+acessar a porta 9000
+
+
+                                              COBERTURA DE CODIGO
+
+\\\\\\\\\test\\\\\\\\\\\ http://www.aquiejava.com/2012/11/verificar-cobertura-de-teste-com-plugin-do-maven.html
+
+
+mvn clean   limpa o projeto
+mvnw test
+
+\\\\\\\\\\\executar\\\\\\\\\\
+
+mvnw spring-boot:run
+
+\\\\\\\\\package\\\\\\\\\\\\\\\\\\
+
+mvnw clean package
+java -jar target/backend-maker-1.0.0-SNAPSHOT.jar
+
+
+\\\\\\\\\\\\\\\\\\\\\mvn cobertura:cobertura
+
+\\\\\\\\\\\\\\\\\\\\\\mvn site
+
+cobertura\target\site\cobertura\index.html.  
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+Dependência: 
+http://www.mojohaus.org/cobertura-maven-plugin/usage.html
+
+Configurar o maven:
+ http://serjava.blogspot.com.br/2011/10/instalacao-do-maven.html
+
+variable name:  M2_HOME
+variable_value: C:\mvn\apache-maven-3.0
+;%M2_HOME%\bin; Confirme.
+
+Pronto! O Maven já deverá ter sido configurado, para testar, abra o prompt do Windows e digite: mvn –version
+
+
+Comando para gerar o relatório de cobertura de código(*la na pasta target/site/index.html):
+https://www.mkyong.com/qa/maven-cobertura-code-coverage-example/
+
+Exemplo de teste de serviço (testando o rest): 
+https://gist.github.com/gustavoponce7/ed3dd97694f7d7acafbc5c6f1c32c26d#file-todocontrollertest-java
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                          maven-cobertura-plugin
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\c:\project> mvn cobertura:cobertura
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\${project}/target/site/cobertura/index.html.  
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\mvn site
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Output - ${project}/site/index.html

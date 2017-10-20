@@ -1,0 +1,56 @@
+Como usar o sonar manualmente
+
+Baixar os arquivos
+
+https://www.sonarqube.org/#downloads
+baixar: sonarqube
+
+https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
+baixar: sonar-scanner
+
+https://docs.sonarqube.org/display/PLUG/Plugin+Library
+baixar: sonar-java-master
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+extrair os zip sonar-scanner e sonarqube no diretorio c:
+
+dentro da pasta sonarqube
+C:\sonarqube-5.6.7\extensions\plugins
+coloque aqui o arquivo sonar-java.jar
+
+dentro da pasta 
+clique em  StartSonar
+
+C:\sonarqube-5.6.7\bin\windows-x86-64\StartSonar
+
+abrira o cmd e rodarar o arquivo StartSonar
+espere ate aparecer a linha : ---isup
+
+agora e so abrir o localhost:9000 no brauser
+
+
+\\\\\\\\\\\\\\Agora dentro de um projeto java\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+Dentro de um projeto java crie um arquivo 
+sonar-project.properties
+
+nele coloque os comandos:
+sonar.projectKey=nomeprojeto
+sonar.projectName=nomeprojeto
+sonar.projectVersion=1.0
+sonar.sources=C:/Users/Eduardo/eclipse-workspace/nomeprojeto/sonar-project.properties
+
+\\\\\Abra o \\\\\\\\cmd dentro do projeto\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+C:\Users\Eduardo\eclipse-workspace\nomeprojeto
+
+acrescente o caminho C:\sonar-scanner-3.0.3.778-windows\bin\sonar-scanner
+ex: 
+C:\Users\Eduardo\eclipse-workspace\nomeprojetoC:\sonar-scanner-3.0.3.778-windows\bin\sonar-scanner 
+aperte enter
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+volte para o local host e o projeto estara la com os detalhes do codigo
+Fim
